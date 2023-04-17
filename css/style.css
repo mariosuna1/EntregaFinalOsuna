@@ -11,6 +11,59 @@
 
 }
 
+.botonera-navbar{
+    background-color:  rgba(229, 146, 130, 0.7);
+   height: 40px;
+
+
+}
+   .botonera-navbar img{
+    width: 60px ;
+   }
+
+   .botonera-navbar nav ul li{
+    /*display
+    display: inline-block;*/
+    /*margin*/
+    font-size: 5rem;
+    margin-right: 20px;
+}
+   .botonera-navbar nav ul li a {
+       font-size: 30px;
+       font-family: 'Roboto', sans-serif;
+       font-weight: 100;
+   }
+
+ 
+    
+.navbar-nav { 
+  
+}
+.nav-item {
+    font-size: medium;
+   color: whitesmoke;
+}
+
+.nav-link {
+    color: whitesmoke;
+    
+}
+    
+.form-control{
+   
+}
+.d-flex{
+   background-color:rgba(229, 146, 130, 0.7);
+
+}
+
+.btn {
+    background-color: rgba(229, 146, 130, 0.7);
+    color: white;
+}
+
+
+
 .conteiner-form{
 
     width: 100%;
@@ -126,54 +179,6 @@ h3{
 }
 
 /* selectores descendentes */
-nav{
-    background-color: rgba(229, 146, 130, 0.7);
-    padding: 10px 30px;
-    height: 40px;
-    /*position - static - relative - absolute - fixed - sticky*/
-    position: sticky;
-    top:0;
-    left: 0;
-    width: 100%;
-    /* flex */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
- 
-    nav img{
-     width: 60px;
-    
-    }
-
-    nav ul{
-        list-style: none;
-        /*display
-        display:inline-block*/
-        display: flex;
-      
-    }
-
-        nav ul li{
-             /*display
-             display: inline-block;*/
-             /*margin*/
-             margin-right: 20px;
-        }
-            nav ul li a{
-                font-size: 2rem;
-                color: whitesmoke;
-                text-decoration: none;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 100;
-            }
-
-            /*hover*/
-                nav ul li a:hover{
-                    color: black;
-                    text-decoration: underline;
-                }
 
 
 
