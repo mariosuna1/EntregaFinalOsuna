@@ -14,6 +14,7 @@
 .botonera-navbar{
     background-color:  rgba(229, 146, 130, 0.7);
    height: 40px;
+ 
 
 
 }
@@ -62,8 +63,20 @@
     color: white;
 }
 
+.form-group{
+    margin: 30px;
+}
+.form-check {
+    margin: 20px;
+}
 
+.form-check-label{
+    margin: 20px;
+}
 
+.conteiner-fluid{
+    width: 100%;
+}
 .conteiner-form{
 
     width: 100%;
@@ -81,6 +94,7 @@
     font-size: 35px;
 
 }
+
 
 .conteiner-form p{
     font-size: 17px;
@@ -257,7 +271,7 @@ header img{
 }
    
 .box-header {
-    padding: ;
+    padding: 
     display: wrap;
     justify-content: space-between;
     flex-direction: row;
@@ -302,7 +316,7 @@ header img{
     width: 80%;
     height:auto;
     margin: 30px auto;
-    padding: 50px 30px;
+    padding: 20px 30px;
 
     
 }
@@ -371,17 +385,32 @@ article
 footer{
     background-color: rgb(229, 146, 130);
     width: 100%;
-    height: 90px;
+    height: 80px;
     display: inline-block;
     position: relative;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: row;
-    text-align: center;
-
-    
+    text-align: bottom;
+    bottom: 0;
 }
+
+.footer-contacto { 
+    background-color: rgb(229, 146, 130);
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-align: bottom;
+    bottom: 0;
+
+}
+
 .footer-nav { 
     background-color: rgba(229, 146, 130, 0.7);
     padding: 10px 30px;
