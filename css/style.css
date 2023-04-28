@@ -13,7 +13,7 @@
 
 .botonera-navbar{
     background-color:  rgba(229, 146, 130, 0.7);
-   height: 40px;
+   height: 8vh;
  
 
 
@@ -37,9 +37,7 @@
 
  
     
-.navbar-nav { 
-  
-}
+
 .nav-item {
     font-size: medium;
    color: whitesmoke;
@@ -50,9 +48,7 @@
     
 }
     
-.form-control{
-   
-}
+
 .d-flex{
    background-color:rgba(229, 146, 130, 0.7);
 
@@ -147,7 +143,6 @@
 .iconos-redes{
     display: flex;
     flex-direction: row;
-    justify-content: ;
     align-items: center;
 }
 
@@ -172,7 +167,7 @@ p{
 
 
 h1{
-    font-size: 4rem;
+    font-size: 0,5vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -181,7 +176,7 @@ h1{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 0,3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -189,7 +184,7 @@ h2{
 }
 
 h3{
-    font-size: 2.4rem;
+    font-size: 0,2vh;
 }
 
 /* selectores descendentes */
@@ -197,20 +192,20 @@ h3{
 
 
 
-/* selector de grupo */
+
 h1{
     color: rgb(89, 110, 101);
     font-weight: 400;
     flex-direction: row;
     justify-content: center;
+    font-size: 5vh;
     
 }
 
 h2{
     color: rgb(89, 110, 101);
     font-weight: 200;
-    align-content: center
-    ;
+    align-content: center;
  
 }
 h3{
@@ -232,16 +227,16 @@ h4{
 }
 
 header img{
-    /* width */
+   
    width: 100%;
    display: inline-block; 
  
 }
 
 
-/* selectores de clase */
+
 .box-top{
-    /* anuncio antes de la nav */
+    position: sticky;
     padding: 6px 0;
     background-color: whitesmoke ;
     color: gray;
@@ -251,16 +246,14 @@ header img{
  
 }
 
-.main-img {
-    margin-left: 300px;
-}
+
 
 
 .box2 {
       /* anuncio temporada */
       padding: 6px 10px;
-      background-color:rgb(226, 209, 191)
-       text-align: center;
+      background-color:rgb(226, 209, 191);
+      text-align: center;
       font-size: 1.6rem;
       color: gray;
       display: flex;
@@ -271,7 +264,6 @@ header img{
 }
    
 .box-header {
-    padding: 
     display: wrap;
     justify-content: space-between;
     flex-direction: row;
@@ -281,9 +273,7 @@ header img{
     
 }
 
-.texto-verde{
-    color: green;
-}
+
 
 .text-center{
     display: flex;
@@ -297,75 +287,98 @@ header img{
 }
 
 
-.text-right{
-    text-align: right;
-}
 
-.text-italic{
-    font-style: italic;
-}
 
-/* selectores de ID */
-#intro{
-    /* propiedades */
-}
 
-/*Box model - width- height - margin - padding - border*/
+
 .contenedor{
     background-color: rgb(226, 209, 191);
-    width: 80%;
+    width: 3fr;
     height:auto;
-    margin: 30px auto;
-    padding: 20px 30px;
+    justify-content: center;
+    object-fit: cover;
 
     
 }
 
-article
-.video{
-    display: flex;
+
+@keyframes contenedorAnimado{
+    0%{background-image:url(../img/invierno.png) ;}
+    33%{background-image:url(../img/1.png) ;}
+    66%{background-image:url(../img/2.png) ;}
+    100%{background-image:url(../img/3.png) ;}
+   
+    
+}
+
+.contenedor-animado{ 
+    height: 70vh;
+    background-size: cover;
+    animation-name: contenedorAnimado ; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+
+     .contenedor-article{
+        width: 80%;
+
+
+}
+
+
+
+
+
+.productos{
+    display: grid;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
-}
-
-/* inicia productos destacados del index */
-.productos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px 20px;
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6,400px;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6"
 
 }
 
     .productos figure{
-        width: 30%;
+        width: 50%;
         border: dotted 1px rgb(229, 146, 130);
         border-radius: 20px;
         background-color: white;
-        margin: 10px 21px;
+        margin: 20px 20px;
         padding: 20px 20px;
     }
 
         .productos figure figcaption{
             color: rgb(87, 83, 85);
-            font-size: 2.2rem;
+            font-size: vh;
             margin-top: 10px;
         }
 
         .productos figure img{
-            width: 100%;
+            width: 100%;  
             
         }
+
+       
 
         .productos figure p{
             font-size: 1.8rem;
         }
 
         .productos figure button{
-            background-color: rgb(222, 192, 106);
+            background-color: rgb(229, 146, 130);
             color: white;
             border: none;
             padding: 6px;
@@ -374,8 +387,12 @@ article
         }
 
         .productos figure button:hover{
-            background-color: rgb(229, 146, 130);
+            background-color: rgb(222, 192, 106);
             cursor: pointer;
+            -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+            transition: all 1s;
+            
         }
 
 
@@ -459,3 +476,15 @@ footer{
  .footer h4 {
     text-align: start;
  }       
+
+
+ @media ( width > 768px){
+    .productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:repeat(3,400px);
+        grid-template-areas: 
+        "1 2"
+        "3 4"
+        "5 6";
+    }
+ }
