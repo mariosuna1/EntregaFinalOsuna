@@ -1,0 +1,85 @@
+body{
+    background-color: $secondaryColor;
+    background-attachment: fixed;
+}
+
+p{
+    color: $keyColor;
+    font-weight: 300;
+    /* 1em es aprox 16px */
+    font-size: 1.5rem; /* serian 20px */
+    line-height: 2.4rem;
+}
+
+
+h1{
+    font-size: 0,5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2{
+    font-size: 0,3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: cente
+}
+
+h3{
+    font-size: 0,2vh;
+}
+
+/* selectores descendentes */
+
+
+
+
+
+h1{
+    color: $keyColor;
+    font-weight: 400;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5vh;
+    
+}
+
+h2{
+    color: $keyColor;
+    font-weight: 200;
+    align-content: center;
+ 
+}
+h3{
+
+    color: $keyColor;
+    font-weight: 300;
+    margin: 10px 0;
+    align-content: center;
+}
+
+h4{
+    color: $keyColor;
+    font-weight: 400;
+    margin: 10px 10px;
+    align-content: center;
+    font-size: 1.4rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.text-center{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:flex-start;
+    background-color: $secondaryColor;
+    font-size: 1.6rem; 
+    color: $keyColor;
+    padding: 50px 50px;
+    margin: 20px 0;
+}

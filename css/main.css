@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+body {
+  background-color: rgb(226, 209, 191);
+  background-attachment: fixed;
+}
+
+p {
+  color: gray;
+  font-weight: 300;
+  /* 1em es aprox 16px */
+  font-size: 1.5rem; /* serian 20px */
+  line-height: 2.4rem;
+}
+
+h1 {
+  font-size: 0, 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 0, 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: cente;
+}
+
+h3 {
+  font-size: 0, 2vh;
+}
+
+/* selectores descendentes */
+h1 {
+  color: gray;
+  font-weight: 400;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 5vh;
+}
+
+h2 {
+  color: gray;
+  font-weight: 200;
+  align-content: center;
+}
+
+h3 {
+  color: gray;
+  font-weight: 300;
+  margin: 10px 0;
+  align-content: center;
+}
+
+h4 {
+  color: gray;
+  font-weight: 400;
+  margin: 10px 10px;
+  align-content: center;
+  font-size: 1.4rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.text-center {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: flex-start;
+  background-color: rgb(226, 209, 191);
+  font-size: 1.6rem;
+  color: gray;
+  padding: 50px 50px;
+  margin: 20px 0;
+}
+
+.botonera-navbar {
+  background-color: rgba(229, 146, 130, 0.7);
+  height: 8vh;
+}
+.botonera-navbar img {
+  width: 60px;
+}
+.botonera-navbar ul li {
+  font-size: 5rem;
+  margin-right: 20px;
+}
+.botonera-navbar ul li a {
+  font-size: 30px;
+  font-family: "roboto", sans-serif;
+  font-weight: 100;
+}
+
+.nav-item {
+  font-size: medium;
+  color: whitesmoke;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+
+.box-top {
+  position: sticky;
+  padding: 6px 0;
+  background-color: whitesmoke;
+  color: gray;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.d-flex {
+  background-color: rgba(229, 146, 130, 0.7);
+}
+
+.btn {
+  background-color: rgba(229, 146, 130, 0.7);
+  color: whitesmoke;
+}
+
+.form-group {
+  margin: 30px;
+}
+
+.form-check {
+  margin: 20px;
+}
+
+.form-check-label {
+  margin: 20px;
+}
+
+@media (width > 768px) {
+  .productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas: "1 2" "3 4" "5 6";
+  }
+}
+.box2 {
+  padding: 6px 10px;
+  background-color: rgb(226, 209, 191);
+  text-align: center;
+  font-size: 1.6rem;
+  color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-header {
+  display: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 1rem;
+  background-color: rgb(226, 209, 191);
+}
+
+.contenedor {
+  background-color: rgb(226, 209, 191);
+  width: 3fr;
+  height: auto;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.productos {
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6, 400px;
+  grid-template-areas: "1" "2" "3" "4" "5" "6";
+}
+.productos figure {
+  width: 50%;
+  border: dotted 1px rgba(229, 146, 130, 0.7);
+  border-radius: 20px;
+  background-color: whitesmoke;
+  margin: 20px 20px;
+  padding: 20px 20px;
+}
+.productos figure p {
+  font-size: 1.8rem;
+}
+.productos figure button {
+  background-color: rgba(229, 146, 130, 0.7);
+  color: whitesmoke;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.productos figure button:hover {
+  background-color: rgb(222, 192, 106);
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.productos figure figcaption {
+  color: gray;
+  font-size: vh;
+  margin-top: 10px;
+}
+.productos figure figcaption img {
+  width: 100%;
+}
+
+.conteiner-fluid {
+  width: 100%;
+}
+
+.conteiner-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 50px;
+  margin-left: 400px;
+  justify-content: center;
+}
+.conteiner-form h2 {
+  margin: 15px;
+  font-size: 35px;
+}
+.conteiner-form p {
+  font-size: 17px;
+  line-height: 1, 6;
+  margin-bottom: 30px;
+}
+.conteiner-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: rgb(226, 209, 191);
+  font-weight: 500;
+}
+
+.conteiner-form form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.conteiner-form form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.conteiner-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background-color: rgba(229, 146, 130, 0.7);
+  color: whitesmoke;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+header img {
+  width: 100%;
+  display: inline-block;
+}
+
+@keyframes contenedorAnimado {
+  0% {
+    background-image: url(../img/invierno.png);
+  }
+  33% {
+    background-image: url(../img/1.png);
+  }
+  66% {
+    background-image: url(../img/2.png);
+  }
+  100% {
+    background-image: url(../img/3.png);
+  }
+}
+.contenedor-animado {
+  height: 70vh;
+  background-size: cover;
+  animation-name: contenedorAnimado;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.contenedor-article {
+  width: 80%;
+}
+
+footer {
+  background-color: rgba(229, 146, 130, 0.7);
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: bottom;
+  bottom: 0;
+}
+
+.footer-contacto {
+  background-color: rgba(229, 146, 130, 0.7);
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+  position: fixed;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: bottom;
+  bottom: 0;
+}
+
+.footer-nav {
+  background-color: rgba(229, 146, 130, 0.7);
+  padding: 10px 30px;
+  height: 40px;
+  /*position - static - relative - absolute - fixed - sticky*/
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content h4 {
+  color: rgb(231, 227, 227);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 10px 0;
+  text-transform: capitalize;
+  line-height: 3rem;
+  position: absolute;
+}
+
+.footer-redes li {
+  margin: 0 0px;
+}
+.footer-redes li ul {
+  list-style: none;
+}
+.footer-redes li ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.footer h4 {
+  text-align: start;
+}
+
+/*# sourceMappingURL=main.css.map */

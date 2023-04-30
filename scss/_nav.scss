@@ -1,0 +1,62 @@
+.botonera-navbar{
+    background-color: $mainColor;
+    height: 8vh;
+    img{
+        width: 60px;
+    }
+    ul{
+        li{
+            font-size: 5rem;
+            margin-right: 20px;
+            a{
+                font-size: 30px;
+                font-family: 'roboto', sans-serif;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.nav-item {
+    font-size: medium;
+   color: $keyColor2;
+}
+
+.nav-link {
+    color: $keyColor2;
+    
+}
+
+
+.box-top{
+    position: sticky;
+    padding: 6px 0;
+    background-color: $keyColor2 ;
+    color: $keyColor ;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.6rem; 
+ 
+}
+
+
+.d-flex{
+    background-color:$mainColor;
+ 
+ }
+ 
+ .btn {
+     background-color: $mainColor;
+     color: $keyColor2;
+ }
+ 
+ .form-group{
+     margin: 30px;
+ }
+ .form-check {
+     margin: 20px;
+ }
+ 
+ .form-check-label{
+     margin: 20px;
+ }

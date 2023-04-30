@@ -1,0 +1,95 @@
+
+.box2 {
+    
+    padding: 6px 10px;
+    background-color:$secondaryColor;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $keyColor;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+
+}
+ 
+.box-header {
+  display: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 1rem;
+  background-color: $secondaryColor;
+
+  
+}
+
+
+.contenedor{
+    background-color: $secondaryColor;
+    width: 3fr;
+    height:auto;
+    justify-content: center;
+    object-fit: cover;
+
+    
+}
+
+
+.productos{
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6,400px;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6" ;
+    figure{
+        width: 50%;
+        border: dotted 1px $mainColor;
+        border-radius: 20px;
+        background-color: $keyColor2;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        p{
+            font-size: 1.8rem;
+        }
+        button{
+            background-color: $mainColor;
+            color: $keyColor2;
+            border: none;
+            padding: 6px;
+            border-radius: 4px;
+            margin-top: 20px;
+            &:hover{
+                background-color: rgb(222, 192, 106);
+                cursor: pointer;
+                -webkit-transform:scale(1.1);
+                transform:scale(1.1);
+                transition: all 1s;
+
+            }
+        }
+
+        figcaption{
+            color: $keyColor;
+            font-size: vh;
+            margin-top: 10px;
+            img{
+                width: 100%; 
+            }
+
+        }
+
+
+    }
+
+}
+
+
