@@ -82,6 +82,7 @@
  }
  .contenedor-animado{ 
     height: 70vh;
+    object-fit: cover;
     background-size: cover;
     animation-name: contenedorAnimado ; 
     animation-duration: 10s;

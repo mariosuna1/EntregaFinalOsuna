@@ -313,6 +313,7 @@ header img{
 
 .contenedor-animado{ 
     height: 70vh;
+    object-fit: cover;
     background-size: cover;
     animation-name: contenedorAnimado ; 
     animation-duration: 10s;
@@ -352,24 +353,29 @@ header img{
 }
 
     .productos figure{
+        height: 90%;
         width: 50%;
         border: dotted 1px rgb(229, 146, 130);
         border-radius: 20px;
         background-color: white;
+        margin-bottom: 50px;
+        margin-top: 50px;
         margin: 20px 20px;
-        padding: 20px 20px;
+        padding: 30px 20px;
+       
+
     }
 
         .productos figure figcaption{
             color: rgb(87, 83, 85);
-            font-size: vh;
+            font-size: 2em;
             margin-top: 10px;
         }
 
         .productos figure img{
             justify-content: center;
-            margin-left: 30px;
-            width: 80%;  
+            margin-left: 50px;
+            width: 70%;  
             
         }
 
@@ -383,7 +389,7 @@ header img{
             background-color: rgb(229, 146, 130);
             color: white;
             border: none;
-            padding: 6px;
+            padding: 20px;
             border-radius: 4px;
             margin-top: 20px;
         }
@@ -488,5 +494,7 @@ footer{
         "1 2"
         "3 4"
         "5 6";
+
     }
+   
  }

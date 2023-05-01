@@ -52,7 +52,7 @@
     "6" ;
     
     figure{
-        height: 50%;
+        width: 50vw;
         border: dotted 1px $mainColor;
         border-radius: 20px;
         background-color: $keyColor2;
@@ -83,7 +83,7 @@
             font-size: vh;
             margin-top: 10px;
             img{
-                width: 80%; 
+                width: 60%; 
                 justify-content: center;
                  margin-left: 30px;
             }
