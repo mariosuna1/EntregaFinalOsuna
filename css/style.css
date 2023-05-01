@@ -367,7 +367,9 @@ header img{
         }
 
         .productos figure img{
-            width: 100%;  
+            justify-content: center;
+            margin-left: 30px;
+            width: 80%;  
             
         }
 
@@ -481,7 +483,7 @@ footer{
  @media ( width > 768px){
     .productos{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:repeat(3,400px);
+        grid-template-rows:repeat(3,60vh);
         grid-template-areas: 
         "1 2"
         "3 4"
