@@ -312,7 +312,9 @@ header img{
 }
 
 .contenedor-animado{ 
+    display: grid;
     height: 70vh;
+    width: 100%;
     object-fit: cover;
     background-size: cover;
     animation-name: contenedorAnimado ; 
@@ -363,6 +365,7 @@ header img{
         margin: 20px 20px;
         padding: 30px 20px;
        
+       
 
     }
 
@@ -374,7 +377,7 @@ header img{
 
         .productos figure img{
             justify-content: center;
-            margin-left: 50px;
+            margin-left: 30px;
             width: 70%;  
             
         }
@@ -440,12 +443,12 @@ footer{
     background-color: rgba(229, 146, 130, 0.7);
     padding: 10px 30px;
     height: 40px;
-    /*position - static - relative - absolute - fixed - sticky*/
+    
     position: sticky;
     top:0;
     left: 0;
     width: 100%;
-    /* flex */
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
