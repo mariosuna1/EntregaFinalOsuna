@@ -18,7 +18,7 @@
     font-size: 35px;
 }
     p{
-        font-size: 17px;
+        font-size: 10px;
         line-height: 1,6;
         margin-bottom: 30px ;
 
@@ -81,13 +81,13 @@
         
  }
  .contenedor-animado{ 
+    display: grid;
     height: 70vh;
-    object-fit: cover;
-    background-size: cover;
+    width: 100%;
+    background-size: 100%;
     animation-name: contenedorAnimado ; 
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    
 
 }
 

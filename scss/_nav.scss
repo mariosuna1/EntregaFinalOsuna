@@ -1,15 +1,15 @@
 .botonera-navbar{
     background-color: $mainColor;
-    height: 8vh;
+    height: 40px;
     img{
-        width: 60px;
+        width: 50px;
     }
     ul{
         li{
-            font-size: 10px;
+            font-size: 20px;
             margin-right: 20px;
             a{
-                font-size: 10px;
+                font-size: 20px;
                 font-family: 'roboto', sans-serif;
                 font-weight: 100;
             }
@@ -18,14 +18,16 @@
 }
 
 .nav-item {
-    font-size: 1em;
+    font-size: 20px;
    color: $keyColor2;
 }
 
 .nav-link {
     color: $keyColor2;
+    font-size: 20px;
     
 }
+
 
 
 .box-top{
@@ -42,6 +44,7 @@
 
 .d-flex{
     background-color:$mainColor;
+    
  
  }
  

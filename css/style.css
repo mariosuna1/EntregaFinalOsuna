@@ -315,7 +315,6 @@ header img{
     display: grid;
     height: 70vh;
     width: 100%;
-    object-fit: cover;
     background-size: cover;
     animation-name: contenedorAnimado ; 
     animation-duration: 10s;

@@ -68,19 +68,22 @@
             padding: 6px;
             border-radius: 4px;
             margin-top: 20px;
-            :hover{
-                background-color: rgb(222, 192, 106);
-                cursor: pointer;
-                -webkit-transform:scale(1.1);
-                transform:scale(1.1);
-                transition: all 1s;
-
-            }
+           
         }
+
+        .productos figure button:hover{
+            background-color: rgb(222, 192, 106);
+            cursor: pointer;
+            -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+            transition: all 1s;
+            
+        }
+
 
         figcaption{
             color: $keyColor;
-            font-size: vh;
+          
             margin-top: 10px;
             img{
                 width: 60%; 
