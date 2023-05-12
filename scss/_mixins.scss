@@ -1,0 +1,10 @@
+@mixin textos($size, $margin ,$color){
+    font-family: $mainfont ;
+    font-size: $size;
+    margin: $margin ;
+    color: $color ;
+}
+
+p{
+    @include textos(2em, 20px ,whitesmoke )
+}

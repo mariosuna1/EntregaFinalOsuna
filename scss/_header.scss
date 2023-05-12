@@ -82,13 +82,16 @@
  }
  .contenedor-animado{ 
     display: grid;
-    height: 70vh;
     width: 100%;
     background-size: 100%;
     animation-name: contenedorAnimado ; 
     animation-duration: 10s;
     animation-iteration-count: infinite;
 
+}
+.contenedor-tamaño{
+    @extend .contenedor-animado;
+    height: 70vh;
 }
 
 .contenedor-article{

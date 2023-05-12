@@ -7,8 +7,7 @@ body {
 p {
   color: gray;
   font-weight: 300;
-  /* 1em es aprox 16px */
-  font-size: 1.5rem; /* serian 20px */
+  font-size: 1.5rem;
   line-height: 2.4rem;
 }
 
