@@ -13,7 +13,7 @@ p {
 }
 
 h1 {
-  font-size: 0, 2vh;
+  font-size: 0,2vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 0, 3vh;
+  font-size: 0,4vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,7 +38,7 @@ h1 {
   font-weight: 400;
   flex-direction: row;
   justify-content: center;
-  font-size: 2vh;
+  font-size: 4vh;
 }
 
 h2 {
@@ -113,7 +113,7 @@ html {
   color: gray;
   flex-wrap: wrap;
   text-align: center;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .d-flex {
@@ -139,11 +139,17 @@ html {
 
 @media (width > 768px) {
   .productos {
+    display: flex;
+    flex-direction: row;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 60vh);
-    grid-template-areas: "1 2" "3 4" "5 6";
+    grid-template-rows: repeat(3, 500px);
+    grid-template-areas:
+     "1 2"
+     "3 4" 
+     "5 6";
   }
 }
+
 .box2 {
   padding: 6px 10px;
   background-color: rgb(226, 209, 191);
@@ -172,25 +178,34 @@ html {
   object-fit: cover;
 }
 
+
 .productos {
-  display: grid;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: 6, 400px;
-  grid-template-areas: "1" "2" "3" "4" "5" "6";
+  grid-template-areas: 
+    "1"
+    "2" 
+    "3"
+    "4" 
+    "5"
+    "6";
 }
 .productos figure {
-  width: 50vw;
+  width: 50vh;
   border: dotted 1px rgba(229, 146, 130, 0.7);
   border-radius: 20px;
   background-color: whitesmoke;
   margin: 20px 20px;
+  margin-top: 20px;
   padding: 20px 20px;
+  font-size: 15px;
 }
 .productos figure p {
-  font-size: 1.8rem;
+  font-size: 30px;
 }
 .productos figure button {
   background-color: rgba(229, 146, 130, 0.7);
@@ -206,6 +221,15 @@ html {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transition: all 1s;
+}
+
+.productos figure button:hover{
+  background-color: rgb(222, 192, 106);
+  cursor: pointer;
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+  transition: all 1s;
+  
 }
 .productos figure figcaption {
   color: gray;
